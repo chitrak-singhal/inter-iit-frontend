@@ -49,8 +49,13 @@ export function DemoCreateAccount() {
           <Label htmlFor="password">Password</Label>
           <Input id="password" type="password" />
         </div>
-        <div className='text-sm text-right underline'>
-            <Link to="/forgot">Forgot Password?</Link>
+        <div className="flex">            
+          <div className='text-sm text-left underline w-1/2'>
+              <Link to="/signup">Sign up</Link>
+          </div>
+          <div className='text-sm text-right underline w-1/2'>
+              <Link to="/forgot">Forgot Password?</Link>
+          </div>
         </div>
       </CardContent>
       <CardFooter>
